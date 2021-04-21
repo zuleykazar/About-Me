@@ -1,0 +1,561 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*all a tags*/
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*all p tags*/
+
+p{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.2em;
+}
+
+/*all h2 tags*/
+
+h2{
+    text-align: center;
+    font-family: 'Shadows Into Light Two', cursive;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.55);
+}
+
+body{
+    background: linear-gradient(95deg, rgba(221,221,221,1) 5%, rgba(228,186,212,1) 30%, rgba(246,223,235,1) 45%, rgba(237,225,236,1) 60%, rgba(202,247,227,1) 90%);
+}
+
+/*Lateral Nav*/
+
+nav{
+    position: fixed;
+    align-self: center;
+    
+    right: 1.2em;
+}
+
+li{
+    list-style: none;
+}
+
+li>a>img{
+    width: 10px;
+    height: 10px;
+    margin: 8px;
+}
+
+li>a>img:hover{
+    transform: scale(2);
+    transition: all .7s;   
+}
+
+/*Header Section*/
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    margin: 40px auto;
+    
+    display: grid;
+    align-items: center;
+    
+    height: 80vh;
+    width: 80%;
+
+    border-radius: 30px;
+    border-top: 1px solid rgba(255, 255, 255, .5);
+    border-left: 1px solid rgba(255, 255, 255, .5);
+    background: linear-gradient(to top, rgba(245, 245, 245, .5), rgba(245, 245, 245, .1));
+    backdrop-filter: blur (2px);
+    background-image: url(Assets/Abstracción.jpg);
+    background-size: cover;
+    opacity: .7; 
+   
+    box-shadow:3px 3px 15px rgba(0, 0, 0, 0.3);
+    
+}
+
+.welcome-box>span{
+    position: absolute;
+    display: block;
+}
+
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, #a945c7, transparent);
+
+}
+
+.welcome-box:hover>#span1{
+    left: 100%;
+    transition: 2s;
+}
+
+.welcome-box{
+    margin: auto;
+    
+    display: grid;
+    justify-content: center;
+    align-items: flex-end;
+
+    height: 75%;
+    width: 80%;
+
+    border-radius: 30px;
+    border-top: 1px solid rgba(255, 255, 255, .5);
+    border-left: 1px solid rgba(255, 255, 255, .5);
+    background: linear-gradient(to top, rgba(245, 245, 245, .5), rgba(245, 245, 245, .2));
+    backdrop-filter: blur (20px);
+    box-shadow:3px 3px 10px rgba(0, 0, 0, 0.3);
+
+    color: rgba(245, 245, 245, .8);    
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    
+    
+}
+
+.welcome-box>h2:after{
+    content: "Hello and Welcome!";
+    
+    transform: translateY(500px);
+    transition: ease 5s;
+}
+
+.welcome-box>h2:hover:after{
+    content: "Nice to see you here!";
+}
+
+.welcome-box>button{
+    align-self: flex-end;
+    justify-self: center;
+
+    width: 120px;
+    height: 40px;
+    
+    padding: 10px;
+    margin: 20px;
+
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: .5em;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    transition: ease-in .7s;
+
+}
+
+.welcome-box>button:hover{
+    background: rgb(228, 186, 212);
+}
+
+.btn-arrow{
+    margin:0 auto;
+              
+    height: 40px;
+    width: 40px;
+
+    background-color: transparent;
+    background-image: url(Assets/icon-arrow2.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border: none;
+}
+
+/*About-me Section*/
+
+.about-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    height: 90%;
+
+    margin: 40px 0px 40px;
+}
+
+.section-title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.section-title>h2{
+    padding-top: 30px;
+
+    font-size: 1.8em;
+    letter-spacing: 1px;
+}
+
+.section-title>div>img{          
+    height: 40px;
+    width: 40px;
+    
+}
+
+.section-title>p{
+    padding-top: 15px;
+    padding-bottom: 30px;
+
+    text-align: center;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    height: 80%;
+
+    margin-top: 30px;
+
+    text-align: center;
+}
+
+.content>div{
+    box-sizing: border-box;
+    align-content: center;
+    align-items: center;
+}
+
+.content>div>img{
+    
+    align-self: center;
+    padding: 25px 100px 25px;
+
+    width: 150px;
+    height: 350px;
+    
+    border-radius: 10px;
+    border-top: 2px solid rgba(255, 255, 255, .5);
+    border-left: 2px solid rgba(255, 255, 255, .5);
+    background: linear-gradient(0deg, rgba(255, 255, 255, .3), transparent);
+    backdrop-filter: blur (2px);
+    box-shadow:3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.content>div>p{
+    margin: 20px;
+
+    height: 100%;
+    width: 320px;
+
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    font-weight: 600;
+
+}
+
+.content>div>p::first-line{
+    font-size: 1.25em;
+}
+
+.name{
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 1em;
+}
+
+/*My-Skills Section*/
+
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.skills-description{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.skill-card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    width: 210px;
+    height: 280px;
+
+
+    border-radius: 12px;
+    border-top: 1px solid rgba(255, 255, 255, .5);
+    border-left: 1px solid rgba(255, 255, 255, .5);
+    background: linear-gradient(to top, rgba(255, 255, 255, .3), transparent);
+    backdrop-filter: blur (3px);
+    box-shadow:3px 3px 10px rgba(0, 0, 0, 0.2);
+    
+    margin: 10px;
+    padding: 10px;
+}
+
+.skill-card:hover{
+    border: 1px solid rgb(169, 69, 199, .5);
+    transform: scale(1.2);
+}
+
+.skill-card>div>img{
+    margin: 0 auto;
+    height: 60px;
+    width: 60px;
+}
+
+.skills-description>div>p{
+    text-align: center;
+    padding: 15px;
+}
+
+/*My-Projects Section*/
+
+.my-works{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.all-projects{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project{    
+    width: 300px;
+    height: 245px;
+
+    padding: 5px;
+    margin: 20px;
+
+    border: none;
+    border-radius: 10px;
+    border-top: 1px solid rgba(255, 255, 255, .5);
+    border-left: 1px solid rgba(255, 255, 255, .5);
+    background: linear-gradient(0deg, rgba(255, 255, 255, .3), rgba(255, 255,255, .1));
+    backdrop-filter: blur (3px);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+.project:hover{
+    width: 300px;
+    height: 250px;
+}
+
+.project>div>img{
+    
+    width: 300px;
+    height: 200px;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+}
+
+.project>h3{
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+
+}
+
+.project>p{
+    text-align: center;
+    font-size: 1em;
+    
+}
+
+/*In-touch Section*/
+
+.in-touch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-networks{
+    display: flex;
+    justify-content: center;
+
+    margin: 50px 10px 50px;
+}
+
+.logo>a>img{
+    height: 60px;
+    width: 60px;
+    margin: 20px;
+}
+
+/*Form Section*/
+
+.contact{
+    display: none;
+}
+
+.contact:target{
+    display: block;
+    padding-top: 50px;
+    position:fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgb(221, 221, 221, .9);
+}
+
+.contact-content{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.close-view{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close-view>a>img{
+    width: 25px;
+    height: 25px;
+      
+    text-decoration: none;
+}
+
+.close-view>a>img:hover{
+    background: rgb(228, 186, 212, .3);
+
+}
+
+.form{
+    display: block;
+    box-sizing: border-box;
+    width: 350px;
+    height: 520px;
+
+    padding: 40px;
+    margin-bottom: 30px;
+
+    border: none;
+    border-radius: 10px;
+    border-top: 1px solid rgba(255, 255, 255, .5);
+    border-left: 1px solid rgba(255, 255, 255, .5);
+    background: linear-gradient(0deg, rgba(255, 255, 255, .3), rgba(255, 255,255, .1));
+    backdrop-filter: blur (3px);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form>h3{
+    text-align: center;
+    font-family: 'Shadows Into Light Two', cursive;
+    letter-spacing: 1px;
+
+    padding-bottom: 10px;
+}
+
+.form>label{
+    display: block;
+
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    
+}
+
+.form>input{
+    display: block;
+
+    width: 100%;
+    height: 20px;
+
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid rgba(169, 69, 199, .8);
+    background: transparent; 
+}
+
+.form>textarea{
+    width: 100%;
+
+    border: none;
+    background: rgba(169, 69, 199, .2) ;
+}
+
+.btn-submit{
+    display: inline-block;
+
+    width: 100%;
+
+    margin: 35px auto;
+    padding: 5px;
+
+    border: none;
+    border-radius: 10px;
+    background:rgb(228, 186, 212);
+    cursor: pointer;
+
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    
+    transition: ease .3s all;
+}
+
+/*Footer-Section*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 12vh;
+    background-color: #aaaaaa;
+}
+
+footer:hover{
+    background: magenta;
+}
+
+footer>p{
+    color: whitesmoke;
+    text-align: center;
+    font-weight: 500;
+}
+
+/*Media-Queries*/
