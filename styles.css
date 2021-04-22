@@ -53,135 +53,6 @@ li>a>img:hover{
     transition: all .7s;   
 }
 
-/*Header Section*/
-
-.header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.box{
-    margin: 40px auto;
-    
-    display: grid;
-    align-items: center;
-    
-    height: 80vh;
-    width: 80%;
-
-    border-radius: 30px;
-    border-top: 1px solid rgba(255, 255, 255, .5);
-    border-left: 1px solid rgba(255, 255, 255, .5);
-    background: linear-gradient(to top, rgba(245, 245, 245, .5), rgba(245, 245, 245, .1));
-    backdrop-filter: blur (2px);
-    background-image: url(Assets/Abstracción.jpg);
-    background-size: cover;
-    opacity: .7; 
-   
-    box-shadow:3px 3px 15px rgba(0, 0, 0, 0.3);
-    
-}
-
-.welcome-box>span{
-    position: absolute;
-    display: block;
-}
-
-#span1{
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 5px;
-    background: linear-gradient(90deg, transparent, #a945c7, transparent);
-
-}
-
-.welcome-box:hover>#span1{
-    left: 100%;
-    transition: 2s;
-}
-
-.welcome-box{
-    margin: auto;
-    
-    display: grid;
-    justify-content: center;
-    align-items: flex-end;
-
-    height: 75%;
-    width: 80%;
-
-    border-radius: 30px;
-    border-top: 1px solid rgba(255, 255, 255, .5);
-    border-left: 1px solid rgba(255, 255, 255, .5);
-    background: linear-gradient(to top, rgba(245, 245, 245, .5), rgba(245, 245, 245, .2));
-    backdrop-filter: blur (20px);
-    box-shadow:3px 3px 10px rgba(0, 0, 0, 0.3);
-
-    color: rgba(245, 245, 245, .8);    
-    font-family: 'Shadows Into Light Two', cursive;
-    font-size: 2em;
-    font-weight: 700;
-    letter-spacing: 1px;
-    
-    
-}
-
-.welcome-box>h2:after{
-    content: "Hello and Welcome!";
-    
-    transform: translateY(500px);
-    transition: ease 5s;
-}
-
-.welcome-box>h2:hover:after{
-    content: "Nice to see you here!";
-}
-
-.welcome-box>button{
-    align-self: flex-end;
-    justify-self: center;
-
-    width: 120px;
-    height: 40px;
-    
-    padding: 10px;
-    margin: 20px;
-
-    border: none;
-    border-radius: 4px;
-    background: transparent;
-    cursor: pointer;
-
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: .5em;
-    font-weight: 600;
-    letter-spacing: 1px;
-
-    transition: ease-in .7s;
-
-}
-
-.welcome-box>button:hover{
-    background: rgb(228, 186, 212);
-}
-
-.btn-arrow{
-    margin:0 auto;
-              
-    height: 40px;
-    width: 40px;
-
-    background-color: transparent;
-    background-image: url(Assets/icon-arrow2.png);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    border: none;
-}
 
 /*About-me Section*/
 
@@ -247,8 +118,7 @@ li>a>img:hover{
     align-items: center;
 }
 
-.content>div>img{
-    
+.content>div>img{ 
     align-self: center;
     padding: 25px 100px 25px;
 
@@ -298,6 +168,11 @@ li>a>img:hover{
     display: flex;
     justify-content: center;
     flex-wrap: wrap; 
+
+    height: 100%;
+    width: 100%;
+
+    margin: 10px 0 10px;
 }
 
 .skill-card{
@@ -318,6 +193,8 @@ li>a>img:hover{
     
     margin: 10px;
     padding: 10px;
+
+    transition: .8s ease-in-out;
 }
 
 .skill-card:hover{
@@ -349,14 +226,16 @@ li>a>img:hover{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
+    height: 100%;
 }
 
-.project{    
+.project{
     width: 300px;
-    height: 245px;
+    height: 260px;
 
     padding: 5px;
-    margin: 20px;
+    margin: 10px;
 
     border: none;
     border-radius: 10px;
@@ -365,24 +244,27 @@ li>a>img:hover{
     background: linear-gradient(0deg, rgba(255, 255, 255, .3), rgba(255, 255,255, .1));
     backdrop-filter: blur (3px);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+
+    transition: .5s ease-in;
     
 }
 
-.project:hover{
-    width: 300px;
-    height: 250px;
+.project-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.project>div>img{
+.project-img>a>img{
+    object-fit: cover;
     
     width: 300px;
     height: 200px;
 
-    border: none;
+    border: 1px solid black;
     border-radius: 10px;
 
     cursor: pointer;
-
 }
 
 .project>h3{
@@ -442,6 +324,7 @@ li>a>img:hover{
 .contact-content{
     display: flex;
     justify-content: center;
+    align-items: center;
     
 }
 
@@ -469,7 +352,6 @@ li>a>img:hover{
     height: 520px;
 
     padding: 40px;
-    margin-bottom: 30px;
 
     border: none;
     border-radius: 10px;
@@ -511,6 +393,7 @@ li>a>img:hover{
 
 .form>textarea{
     width: 100%;
+    height: 120px;
 
     border: none;
     background: rgba(169, 69, 199, .2) ;
